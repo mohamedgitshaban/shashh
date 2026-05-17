@@ -34,10 +34,29 @@ class CompanyResource extends Resource
                         Forms\Components\TextInput::make('email')
                             ->email()
                             ->required()
-                            ->maxLength(255),
+                            ->maxLength(255)
+                            ->unique(table: 'users', column: 'email', ignoreRecord: true)
+                            ->validationMessages([
+                                'unique' => 'This email address is already registered.',
+                            ]),
                         Forms\Components\TextInput::make('phone')
                             ->tel()
                             ->maxLength(20),
+                        Forms\Components\TextInput::make('password')
+                            ->password()
+                            ->required(fn (string $operation): bool => $operation === 'create')
+                            ->minLength(8)
+                            ->maxLength(255)
+                            ->dehydrateStateUsing(fn (string $state): string => bcrypt($state))
+                            ->dehydrated(fn (?string $state): bool => filled($state))
+                            ->confirmed(),
+                        Forms\Components\TextInput::make('password_confirmation')
+                            ->password()
+                            ->label('Confirm Password')
+                            ->required(fn (string $operation): bool => $operation === 'create')
+                            ->minLength(8)
+                            ->maxLength(255)
+                            ->dehydrated(false),
                     ])->columns(3),
 
                 Forms\Components\Section::make('Company Details')
