@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\api\auth\ClientAuthController;
 use App\Http\Controllers\api\auth\CompanyAuthController;
+use App\Http\Controllers\api\company\ScreenController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,6 +25,7 @@ Route::prefix('company')->group(function () {
         Route::get('/profile', [CompanyAuthController::class, 'profile']);
         Route::put('/profile', [CompanyAuthController::class, 'updateProfile']);
         Route::post('/logout', [CompanyAuthController::class, 'logout']);
+        Route::apiResource('screens', ScreenController::class);
     });
 });
 Route::prefix('client')->group(function () {
