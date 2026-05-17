@@ -68,4 +68,14 @@ class User extends Authenticatable
     {
         return $this->getRawOriginal('type') === self::ROLE_CLIENT;
     }
+
+    public function campaigns()
+    {
+        return $this->hasMany(Campaign::class, 'client_id');
+    }
+
+    public function screens()
+    {
+        return $this->hasMany(Screen::class, 'company_id');
+    }
 }

@@ -44,6 +44,9 @@ class AdminPanelProvider extends PanelProvider
                 Widgets\AccountWidget::class,
                 \App\Filament\Admin\Widgets\StatsOverviewWidget::class,
                 \App\Filament\Admin\Widgets\ScreensChartWidget::class,
+                \App\Filament\Admin\Widgets\CampaignsStatusChartWidget::class,
+                \App\Filament\Admin\Widgets\CampaignsArtworkChartWidget::class,
+                \App\Filament\Admin\Widgets\CampaignsTrendChartWidget::class,
             ])
             ->middleware([
                 EncryptCookies::class,
