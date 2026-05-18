@@ -36,6 +36,7 @@ Route::prefix('company')->group(function () {
         Route::get('/bookings/stats', [BookingDashboardController::class, 'stats']);
         Route::get('/bookings/export', [BookingDashboardController::class, 'export']);
         Route::get('/bookings', [BookingDashboardController::class, 'index']);
+        Route::get('/bookings/most-sold', [BookingDashboardController::class, 'mostSold']);
     });
 });
 
@@ -62,4 +63,3 @@ Route::prefix('client')->group(function () {
         Route::get('/campaigns/{id}', [CampaignController::class, 'show']);
     });
 });
-

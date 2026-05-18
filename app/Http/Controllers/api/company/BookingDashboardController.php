@@ -118,4 +118,20 @@ class BookingDashboardController extends Controller
             'Content-Disposition' => 'attachment; filename="bookings.csv"',
         ]);
     }
+
+    public function mostSold(Request $request) {
+        $companyId = $request->user()->id;
+
+        $data = Booking::selectRaw(
+            'screens.id as screen_id,
+            screens.name as screen_name,
+            COUNT(bookings.id) as total_bookings')
+            ->join('screens', 'bookings.screen_id', '=', 'screens.id')
+            ->where('screens.company_id', $companyId)
+            ->groupBy('screens.id', 'screens.name')
+            ->orderByDesc('total_bookings')
+            ->get();
+
+        return response()->json(['most_sold' => $data]);
+    }
 }
