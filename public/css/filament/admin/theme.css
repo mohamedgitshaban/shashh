@@ -1,0 +1,135 @@
+:root {
+    color-scheme: light;
+}
+
+body {
+    background-color: #eef2ff;
+}
+
+.fi-shell,
+.fi-page {
+    background-color: transparent;
+}
+
+.fi-sidebar {
+    background-color: #ffffff !important;
+    border-right: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.fi-sidebar-header,
+.fi-sidebar-nav {
+    background-color: #ffffff;
+}
+
+.fi-sidebar-item-button {
+    border-radius: 1rem;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.fi-sidebar-item-button:hover,
+.fi-sidebar-item-button:focus-visible {
+    background-color: #eef4ff;
+}
+
+.fi-sidebar-item-button.fi-active,
+.fi-sidebar-item-button.fi-active:hover,
+.fi-sidebar-item-button.fi-active:focus-visible {
+    background-color: #0b42ff;
+    color: #ffffff;
+}
+
+.fi-sidebar-item-icon,
+.fi-sidebar-item-label {
+    color: #334155;
+}
+
+.fi-sidebar-item-button.fi-active .fi-sidebar-item-icon,
+.fi-sidebar-item-button.fi-active .fi-sidebar-item-label {
+    color: #ffffff;
+}
+
+.fi-page-header {
+    background-color: rgba(11, 66, 255, 0.05);
+    border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.fi-page-header .fi-page-header-heading {
+    color: #0f172a;
+}
+
+.fi-card,
+.fi-form-section,
+.fi-table,
+.fi-ta-pagination,
+.fi-modal,
+.fi-dropdown-list {
+    background-color: #ffffff;
+    border-color: rgba(15, 23, 42, 0.08);
+    box-shadow: 0 24px 50px rgba(15, 23, 42, 0.06);
+}
+
+.fi-card,
+.fi-form-section {
+    border-radius: 1.5rem;
+}
+
+.fi-table,
+.fi-ta-pagination,
+.fi-modal,
+.fi-dropdown-list {
+    border-radius: 1rem;
+}
+
+.fi-input-wrp,
+.fi-input-wrp-textarea,
+.fi-input-wrp-select,
+.fi-input,
+.fi-select-input,
+.fi-textarea {
+    background-color: #f8fafc;
+    border-color: rgba(15, 23, 42, 0.08);
+}
+
+.fi-input-wrp-label {
+    color: #475569;
+}
+
+.fi-btn-primary,
+.fi-btn-primary:hover,
+.fi-btn-primary:focus-visible {
+    background-color: #0b42ff;
+    border-color: #0b42ff;
+    color: #ffffff;
+}
+
+.fi-btn-secondary,
+.fi-btn-secondary:hover,
+.fi-btn-secondary:focus-visible {
+    background-color: #f8fafc;
+    border-color: rgba(15, 23, 42, 0.08);
+    color: #0f172a;
+}
+
+.fi-btn-danger,
+.fi-btn-danger:hover,
+.fi-btn-danger:focus-visible {
+    background-color: #f97316;
+    border-color: #f97316;
+    color: #ffffff;
+}
+
+.fi-form-section-header {
+    color: #0f172a;
+}
+
+.fi-breadcrumbs {
+    color: #0f172a;
+}
+
+.fi-breadcrumbs a {
+    color: #0b42ff;
+}
+
+.fi-breadcrumbs a:hover {
+    text-decoration: underline;
+}
