@@ -116,4 +116,5 @@ return [
     'verify_email_action' => 'Verify Email Address',
     'verify_email_expire' => 'If you did not create an account, no further action is required.',
     'email_regards' => 'Regards, Shashh Family',
+    'footer_address_value' => 'Al Khobar - Gulf Cooperation Council Road.Golden Tower o^ice 7/1 Saudi Arabia',
 ];

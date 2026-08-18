@@ -62,7 +62,7 @@
                 <h1>{{ __('messages.about_hero_title') }}</h1>
                 <h2>{{ __('messages.about_hero_subtitle') }}</h2>
                 <p>{{ __('messages.about_hero_desc') }}</p>
-                <a class='btn btn-primary btn-large book' href='/contact'>{{ __('messages.about_hero_cta') }}</a>
+                <a class='btn btn-primary btn-large book' href='https://client.shashh.com/login'>{{ __('messages.about_hero_cta') }}</a>
             </div>
         </div>
     </section>
@@ -110,7 +110,7 @@
                             <p>{{ __('messages.about_founder_p2') }}</p>
                             <p>{{ __('messages.about_founder_p3') }}</p>
                         </div>
-                        <a class='btn btn-primary btn-lg mt-3' href='/contact'>{{ __('messages.book_signages') }}</a>
+                        <a class='btn btn-primary btn-lg mt-3' href='https://client.shashh.com/login'>{{ __('messages.book_signages') }}</a>
                     </div>
                 </div>
             </div>
@@ -155,17 +155,7 @@
                             <li><a href='/privacy'>{{ __('messages.footer_privacy') }}</a></li>
                             <li><a href='/cookies'>{{ __('messages.footer_cookies') }}</a></li>
                         </ul>
-                        <h5 class='footer-title'>{{ __('messages.footer_follow_us') }}</h5>
-                        <div class='social-links'>
-                            <a href='https://www.facebook.com/shashh' aria-label='Facebook'><i
-                                    class='fa-brands fa-facebook'></i></a>
-                            <a href='https://www.twitter.com/shashh' aria-label='Twitter'><i
-                                    class='fa-brands fa-twitter'></i></a>
-                            <a href='https://www.instagram.com/shashh' aria-label='Instagram'><i
-                                    class='fa-brands fa-instagram'></i></a>
-                            <a href='https://www.linkedin.com/company/shashh' aria-label='LinkedIn'><i
-                                    class='fa-brands fa-linkedin'></i></a>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -232,7 +222,7 @@
 
         .about-hero-content h1 {
             font-size: clamp(2rem, 4.8vw, 3.3rem);
-            color: #002cdd;
+            color: #fff;
             margin-bottom: 0.8rem;
         }
 
@@ -320,6 +310,7 @@
             font-weight: 500;
             color: #373a40;
             line-height: 1.15;
+            text-align: center;
         }
 
         .process-copy {
@@ -327,6 +318,7 @@
             font-size: clamp(1.02rem, 1.18vw, 1.15rem);
             color: #474b52;
             line-height: 1.35;
+            text-align: center;
         }
 
         .founder-revolution {

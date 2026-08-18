@@ -72,31 +72,6 @@
         </div>
     </nav>
 
-    <section style="margin-top: 80px;">
-        <div class="container">
-            <div class="row g-4 text-center">
-                <div class="col-md-4">
-                    <div class="p-3 ">
-                        <i class="fa-solid fa-location-dot fa-2x mb-2 primary"></i>
-                        <p class="mb-0">{{ __('messages.contact_location_short') }}</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="p-3 ">
-                        <i class="fa-solid fa-envelope fa-2x mb-2 primary"></i>
-                        <p class="mb-0">{{ __('messages.contact_email_value') }}</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="p-3 ">
-                        <i class="fa-solid fa-phone fa-2x mb-2 primary"></i>
-                        <p class="mb-0">{{ __('messages.contact_phone_value') }}</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section class="py-5">
         <div class="container">
             <div class="row g-4">
@@ -164,7 +139,7 @@
                     <div class='footer-panel'>
                         <h5 class='footer-title'>{{ __('messages.footer_contact_us') }}</h5>
                         <p>{{ __('messages.footer_email') }}: <a href='mailto:info@shashh.com'>info@shashh.com</a></p>
-                        <p>{{ __('messages.footer_phone') }}: <a href='tel:+1234567890'>+1 (234) 567-890</a></p>
+                        <p>{{ __('messages.footer_phone') }}: <a href='tel:+966542594202'>+966 54 259 4202</a></p>
                         <p>{{ __('messages.footer_address') }}: 123 Main Street, Anytown, USA</p>
                     </div>
                 </div>
@@ -176,17 +151,7 @@
                             <li><a href='/privacy'>{{ __('messages.footer_privacy') }}</a></li>
                             <li><a href='/cookies'>{{ __('messages.footer_cookies') }}</a></li>
                         </ul>
-                        <h5 class='footer-title'>{{ __('messages.footer_follow_us') }}</h5>
-                        <div class='social-links'>
-                            <a href='https://www.facebook.com/shashh' aria-label='Facebook'><i
-                                    class='fa-brands fa-facebook'></i></a>
-                            <a href='https://www.twitter.com/shashh' aria-label='Twitter'><i
-                                    class='fa-brands fa-twitter'></i></a>
-                            <a href='https://www.instagram.com/shashh' aria-label='Instagram'><i
-                                    class='fa-brands fa-instagram'></i></a>
-                            <a href='https://www.linkedin.com/company/shashh' aria-label='LinkedIn'><i
-                                    class='fa-brands fa-linkedin'></i></a>
-                        </div>
+
                     </div>
                 </div>
             </div>

@@ -67,7 +67,7 @@
             <h1>{{ __('messages.banner_title') }}</h1>
             <h2>{{ __('messages.banner_subtitle') }}</h2>
             <p>{!! __('messages.banner_desc') !!}</p>
-            <a class='btn btn-primary btn-large book' href='/contact'>{{ __('messages.book_signages') }}</a>
+            <a class='btn btn-primary btn-large book' href='https://client.shashh.com/login'>{{ __('messages.book_signages') }}</a>
         </div>
         {{-- Using Bootstrap grid for responsiveness --}}
         <div class='container mt-auto position-relative' style="z-index: 50" data-aos="fade-up" data-aos-delay="0">
@@ -157,7 +157,7 @@
                         <span class='howitworks-kicker'>{{ __('messages.step1_title') }}</span>
                         <h3 class='howitworks-title'>{{ __('messages.step1_subtitle') }}</h3>
                         <p class='howitworks-desc'>{{ __('messages.step1_desc') }}</p>
-                        <a class='howitworks-btn' href='/contact'>{{ __('messages.book_signages') }}</a>
+                        <a class='howitworks-btn' href='https://client.shashh.com/login'>{{ __('messages.book_signages') }}</a>
                     </div>
                 </div>
                 <div class='col-lg-6 order-1 order-lg-2 d-flex'>
@@ -180,7 +180,6 @@
                         <span class='howitworks-kicker'>{{ __('messages.step2_title') }}</span>
                         <h3 class='howitworks-title'>{{ __('messages.step2_subtitle') }}</h3>
                         <p class='howitworks-desc'>{{ __('messages.step2_desc') }}</p>
-                        <a class='howitworks-btn' href='/contact'>{{ __('messages.book_signages') }}</a>
                     </div>
                 </div>
             </div>
@@ -193,7 +192,6 @@
                         <span class='howitworks-kicker'>{{ __('messages.step3_title') }}</span>
                         <h3 class='howitworks-title'>{{ __('messages.step3_subtitle') }}</h3>
                         <p class='howitworks-desc'>{{ __('messages.step3_desc') }}</p>
-                        <a class='howitworks-btn' href='/contact'>{{ __('messages.book_signages') }}</a>
                     </div>
                 </div>
                 <div class='col-lg-6 order-1 order-lg-2 d-flex'>
@@ -254,7 +252,7 @@
                             </div>
                         </div>
                         <p class='mt-4'>{{ __('messages.revolution_footer') }}</p>
-                        <a class='btn btn-primary btn-lg mt-3' href='/contact'>{{ __('messages.book_signages') }}</a>
+                        <a class='btn btn-primary btn-lg mt-3' href='https://client.shashh.com/'>{{ __('messages.book_signages') }}</a>
                     </div>
                 </div>
 
@@ -287,8 +285,8 @@
                     <div class='footer-panel'>
                         <h5 class='footer-title'>{{ __('messages.footer_contact_us') }}</h5>
                         <p>{{ __('messages.footer_email') }}: <a href='mailto:info@shashh.com'>info@shashh.com</a></p>
-                        <p>{{ __('messages.footer_phone') }}: <a href='tel:+1234567890'>+1 (234) 567-890</a></p>
-                        <p>{{ __('messages.footer_address') }}: 123 Main Street, Anytown, USA</p>
+                        <p>{{ __('messages.footer_phone') }}: <a href='tel:+966542594202'>+966542594202</a></p>
+                        <p>{{ __('messages.footer_address') }}: {{ __('messages.footer_address_value') }}</p>
                     </div>
                 </div>
                 <div class='col-12 col-md-6 col-lg-3'>
@@ -299,17 +297,7 @@
                             <li><a href='/privacy'>{{ __('messages.footer_privacy') }}</a></li>
                             <li><a href='/cookies'>{{ __('messages.footer_cookies') }}</a></li>
                         </ul>
-                        <h5 class='footer-title'>{{ __('messages.footer_follow_us') }}</h5>
-                        <div class='social-links'>
-                            <a href='https://www.facebook.com/shashh' aria-label='Facebook'><i
-                                    class='fa-brands fa-facebook'></i></a>
-                            <a href='https://www.twitter.com/shashh' aria-label='Twitter'><i
-                                    class='fa-brands fa-twitter'></i></a>
-                            <a href='https://www.instagram.com/shashh' aria-label='Instagram'><i
-                                    class='fa-brands fa-instagram'></i></a>
-                            <a href='https://www.linkedin.com/company/shashh' aria-label='LinkedIn'><i
-                                    class='fa-brands fa-linkedin'></i></a>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -775,6 +763,10 @@
 
         [dir="rtl"] .howitworks-panel {
             align-items: flex-start;
+            text-align: right;
+        }
+
+        [dir="rtl"] .banner .header {
             text-align: right;
         }
     </style>
