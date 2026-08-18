@@ -73,7 +73,7 @@ class CompanyAuthController extends Controller
         }
 
         if ($company->approval_status === 'in_review') {
-            return response()->json(['message' => 'Your company account is still in review.'], 403);
+            return response()->json(['message' => 'Your company account is under review, it may take up to 2 business days. \nThanks for your patience.'], 403);
         }
 
         if ($company->approval_status === 'rejected') {
